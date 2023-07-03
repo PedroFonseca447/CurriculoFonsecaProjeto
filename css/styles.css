@@ -136,9 +136,29 @@ body{
     display: inline-block;
 }
 
-.main img{
+.socialImg{
 
     float: right;
     width: 200px;
     
+}
+
+.main p{
+
+    margin-top: 0px;
+    
+}
+
+.links li{
+
+    list-style: none;
+    display: inline-block;
+    
+}
+
+.social-img{
+
+    width: 40px;
+    margin-right: 10px;
+
 }
