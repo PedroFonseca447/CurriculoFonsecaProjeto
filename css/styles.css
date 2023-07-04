@@ -143,6 +143,13 @@ body{
     
 }
 
+.problema a{
+
+    color: #11f8c6f6;
+    margin-top: 1000px;
+}
+
+
 .main p{
 
     margin-top: 0px;
@@ -161,4 +168,51 @@ body{
     width: 40px;
     margin-right: 10px;
 
+}
+
+.miniatura{
+    width: 360px;
+    height: 360px;
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.miniatura a{
+    text-decoration: none;
+}
+
+.blackbox{
+    background-color: black ;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    padding-top: 120px;
+  
+}
+
+.blackbox:hover{
+    opacity: 0.8;
+}
+
+.blackbox-text{
+    text-align: center;
+}
+
+
+.blackbox-text h1{
+    font-size: 20px;
+    color:  #11f8c6f6;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+
+.blackbox-text h2{
+    text-transform: none;
+    font-weight: 100;
+    font-size: 16px;
+    color: white;
+    margin-top: 0;
 }
