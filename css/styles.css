@@ -40,7 +40,8 @@ body{
 }
 
 .name span{
-    color: #1e61b0;
+    color:#11f8c6f6;
+    
     display: block;
 }
 
@@ -215,4 +216,19 @@ body{
     font-size: 16px;
     color: white;
     margin-top: 0;
+}
+
+
+.fotos-java{
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.lista-trabalhos{
+    color: white;
+}
+
+.linksGit li{
+    list-style: none;
 }

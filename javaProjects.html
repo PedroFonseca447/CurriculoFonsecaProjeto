@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<title>Trabalhos  - Java</title>
+
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+
+	</head>
+
+
+	<body>
+
+			<div class="fundo">
+				<ul>
+					<li>Home</li>
+					<li>Portfolio</li>
+					<li>Currículo</li>
+					<li>Contato</li>
+				</ul>
+			</div>
+						
+			<div class="main">
+				
+				
+				<ul class="ListaPercorre">
+					<li>Home</li>
+					<li>></li>
+					<li>Portfolio</li>
+					<li>></li>
+					<li>Trabalhos-Java</li>
+				</ul>
+
+				<h1>Java códigos</h1>
+				
+				<img class="fotos-java" src="img/CLIENTE-SERVIDOR.png" alt="distribuido">
+				<h2>Enunciado do trabalho:</h2>
+
+					<p>Usar o código exemplo visto em aula para desenvolver um sistema distribuído baseado no modelo Cliente/Servidor utilizando RMI que simule a criação de contas de clientes e transações bancárias nestas contas (quem preferir pode usar outras linguagens, mas o protocolo tem que ser do tipo RPC/RMI).</p>
+					<p> O sistema deve ter no mínimo 3 tipos de processos: administração, agência e caixa automático. Devem ser implementadas as seguintes funcionalidades:</p>
+						<ul class="lista-trabalhos">
+							<li>Processo Administração: realiza abertura e fechamento de contas (para agências), autentica que contas já existem (tanto para agências e caixas automáticos) e também executa as operações de manipulação destas contas (saques e depósitos). Deve garantir semântica de execução exactely once para operações que sejam não-idempotentes;</li>
+							<li>Processo Agência: solicita abertura, autenticação e fechamento de contas e também pode solicitar depósito, retirada e consulta de saldo em conta existente. A abertura de conta, o depósito e a retirada devem ser operações garantidamente não-idempotentes (semântica de execução exactely once);</li>
+							<li> Caixa Automático: solicita depósito, retirada e consulta de saldo em conta existente. As duas primeiras devem ser operações garantidamente não-idempotentes (semântica de execução exactely once) mesmo que ocorra algum erro na confirmação da operação (simular com injeção de falhas).</li>
+						</ul>
+				
+			<div class="linksGit">		
+					<li><a href="https://github.com/PedroFonseca447/distribuidoT2" target="_blank"><img class="social-img" src="img/github.png" alt="GitHub">Link do repositório no github</a></li>
+
+			</div>	
+				<img class="fotos-java" src="img/maven.png" alt="testes">
+				<h2>Enunciado do trabalho:</h2>
+
+					<p>Seja a seguinte descrição de um sistema bancário: um banco possui um produto diferenciado chamada “conta mágica”. Nesta conta, quanto mais dinheiro o cliente tem depositado mais o banco valoriza seus depósitos. Todos as contas iniciam na categoria “Silver” e zeradas. Contas “Silver” não têm seus depósitos valorizados, ou seja, o valor creditado é exatamente o valor depositado pelo cliente.</p>
+					<p>Quando o saldo da conta atinge ou ultrapassa R$ 50.000,00, a conta passa para a categoria “Gold”. Contas “Gold” têm seus depósitos valorizados em 1%. Neste caso se o cliente depositar R$ 1.000,00 o valor creditado será de R$ 1.010,00. </p>
+					<P>Finalmente se o saldo da conta atinge ou supera os R$ 200.000,00, a conta passa para a categoria “Platinum”. Contas “Platinum” têm seus depósitos valorizados em 2,5%. A verificação de “upgrade” da conta se dá via operação de depósito, e não é possível que um cliente faça “upgrade” diretamente de “Silver” para “Platinum” em uma única operação.</p>
+					<p>Quando o saldo da conta diminui, em função de uma operação de retirada/saque, a categoria também pode retroceder. Os limites, porém, não são os mesmos que os verificados quando uma conta sofre “upgrade”. Uma conta só perde sua categoria “Platinum”, e passa para “Gold”, se o saldo cair abaixo de R$ 100.000,00.</p>
+		        	<p>A conta só perde a categoria “Gold”, e passa para “Silver”, se o saldo cair para menos de R$ 25.000,00. Note que uma conta nunca perde duas categorias em uma única operação de retirada mesmo que o saldo caia abaixo de R$ 25.000,00. Se ele era “Platinum”, cai para “Gold”. Só poderá cair para “Silver” na próxima operação de retirada. Observação: as contas nunca podem ficar negativas.</p>
+					<p>O esqueleto da classe “ContaCorrente” está definido na sequência. Considere que o número da conta e o nome do correntista são informados pelo construtor e o saldo inicial é sempre zero. Os métodos de depósito e retirada retornam “false” quando alguma coisa não permitir a operação (valor inválido, saldo insuficiente etc.).</p>
+					<p>O número da conta é um valor inteiro positivo pertencente ao intervalo (99999;999999] seguido de um traço seguido de dois dígitos correspondentes ao somatório dos dígitos do número da conta. Exemplos: 100445-14, 344122-16. Para valores inválidos o construtor deve gerar uma IllegalNumberException.</p>
+					<p>O nome do cliente tem de ter pelo menos 3 caracteres que correspondam a letras. Caso o nome não atenda a esta regra o construtor deve gerar uma IllegalNameException.</p>
+			<div class="linksGit">		
+						<li><a href="https://github.com/PedroFonseca447/VerivalContaMagica" target="_blank"><img class="social-img" src="img/github.png" alt="GitHub">Link do repositório no github</a></li>
+	
+			</div>
+			<img class="fotos-java" src="img/arvore.jpg" alt="genérica">
+				<h2>Enunciado do trabalho:</h2>
+
+					<p>O objetivo deste trabalho, que pode ser feito em dupla ou individualmente, é desenvolver	uma solução para gerenciar uma árvore de palavras para um dicionário.</p>
+					<p>Para isto, deverá ser lido um arquivo de palavras com seus significados que deverá ser armazenado em uma árvore. </p>
+					<P>A partir de dois ou três caracteres digitados, deverá ser apresentada a lista de palavras que começam com estes caracteres. </p>
+					<p>A estrutura de dados a ser desenvolvida obrigatoriamente deve ser baseada em uma árvore genérica. Sugere-se ter como referência a implementação de árvore genérica estudada e exercitada em aula.</p>
+					
+			<div class="linksGit">		
+					<li><a href="https://github.com/PedroFonseca447/AlestT2Arvore" target="_blank"><img class="social-img" src="img/github.png" alt="GitHub">Link do repositório no github</a></li>
+
+			</div>
+			</div>	
+			
+	</body>
+
+</html>
