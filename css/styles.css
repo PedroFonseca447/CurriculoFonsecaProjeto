@@ -24,7 +24,14 @@ body{
    text-align:  right;
    height: 50px;
 }
+.fundo a{
+    text-decoration:  none;
+    color: white;
+}
 
+.fundo a:hover{
+    color: #11f8c6f6;
+}
 
 .fundo li{
     display: inline-block;
@@ -34,7 +41,9 @@ body{
     font-size: 20px;
 }
 
-
+.fundo li.three-line{
+    display: none;
+}
 .name{
     color: white;
 }
@@ -137,6 +146,11 @@ body{
     display: inline-block;
 }
 
+.ListaPercorre a{
+    text-decoration: none;
+    color: white;
+}
+
 .socialImg{
 
     float: right;
@@ -231,4 +245,9 @@ body{
 
 .linksGit li{
     list-style: none;
+}
+
+.back-link a{
+    color: #11f8c6f6;
+    text-decoration: none;
 }
