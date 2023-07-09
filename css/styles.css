@@ -64,25 +64,25 @@ body{
 }
 
 .pick-photo{
-   width: 40%;
-}
-
-.pick-photo img{
-    width: 350px;
-    border-radius: 350px;
-    text-align: center;
-    margin-left: 300px;
-    margin-top: 200px;
-    animation-name: capa-animation;
-    animation-duration: 4s;
-}
-
-.pick-name{
-    vertical-align: top;
-    width: 59%;
-    animation-name: text-animation;
-    animation-duration: 4s;
-}
+    width: 40%;
+ }
+ 
+ .pick-photo img{
+     width: 350px;
+     border-radius: 350px;
+     text-align: center;
+     margin-left: 300px;
+     margin-top: 200px;
+     animation-name: capa-animation;
+     animation-duration: 4s;
+ }
+ 
+ .pick-name{
+     vertical-align: top;
+     width: 59%;
+     animation-name: text-animation;
+     animation-duration: 4s;
+ }
 
 .pick-name h1 {
     font-size: 58px;
@@ -280,4 +280,55 @@ body{
 @keyframes back-animation{
     0% {transform: translate(-30px,0px)}
     100%{transform: translate(0px,0px)}
+}
+
+@media (max-width: 1000px) {
+
+    .fundo li{
+        display:none;
+       
+    }
+
+    .fundo li.three-line{
+        display: inline-block;
+        margin-right: 210px;
+    }
+
+    .name div {
+        display: block;
+        height: auto;
+    }
+
+
+    .pick-photo{
+        width: 100%;
+      
+     }
+    
+    .pick-name{
+        vertical-align: top;
+        width: 100%;
+    }
+    .pick-photo img{
+        width: 350px;
+        border-radius: 350px;
+        text-align: center;
+        margin-left: 70px;
+        margin-top: 100px;
+        max-width: 80%;
+    }
+    .pick-name h1 {
+        font-size: 28px;
+        margin-top: 80px;
+        line-height: 50px;
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+    .pick-name h2 {
+        font-size: 18px;
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
 }
