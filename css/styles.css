@@ -46,6 +46,12 @@ body{
 
 .fundo li.three-line{
     display: none;
+
+}
+.fundo li.three-line:hover{
+   cursor: pointer;
+   color:#11f8c6f6;
+    
 }
 .name{
     color: white;
@@ -314,7 +320,8 @@ body{
         border-radius: 350px;
         text-align: center;
         margin-left: 70px;
-        margin-top: 100px;
+        margin-right: 80px;
+        margin-top: 50px;
         max-width: 80%;
     }
     .pick-name h1 {
@@ -330,5 +337,43 @@ body{
         text-align: center;
         margin-right: 20px;
         margin-left: 20px;
+    }
+    .main{
+        padding: 10px 5% 10px 5%;
+        
+    }
+    .main p{
+        text-align: left;
+        line-height: 30px;
+    }
+
+    .main a{
+        overflow-wrap: break-word;
+    }
+    
+    .blackbox{
+        opacity: 0.8;
+    }
+    
+    .menujs{
+        height: auto;
+
+    }
+
+    .menujs li{
+        border-bottom: solid grey 1px;
+        display: block;
+    }
+
+    .menujs ul{
+        height: auto;
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
+      
+    }
+    .menujs li.three-line{
+       
+        margin-right: auto;
     }
 }
